@@ -1,0 +1,127 @@
+# Rewrite URL rules
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^tiktok($|/) - [L]
+        
+    RewriteCond %{HTTP_HOST} ^teamdigital.team$ [NC]
+    RewriteRule (.*) https://www.teamdigital.team/$1 [R=301,L] 
+
+    RewriteRule ^about-us/ about-us.php [NC,L]
+    RewriteRule ^contact-us/ contact-us.php [NC,L]
+    RewriteRule ^blog/author/(.*)/ author.php?auth=$1 [NC,L]
+    RewriteRule ^blog/category/(.*)/ category.php?cat=$1 [NC,L]
+    RewriteRule ^blog/(.*)/(.*)/ blog-post.php?id=$1&title=$2 [NC,L]
+    RewriteRule ^blog/ blog.php [NC,L]
+    RewriteRule ^videos/ videos.php [NC,L]
+    RewriteRule ^promotion/ promotion.php [NC,L]
+    RewriteRule ^class-schedules/ class-schedules.php [NC,L]
+    RewriteRule ^testimonials/ testimonials.php [NC,L]
+    RewriteRule ^news/(.*)/(.*)/ news-post.php?id=$1&title=$2  [NC,L]
+    RewriteRule ^news/ news.php [NC,L]
+    RewriteRule ^instructors/(.*)/(.*)/ instructors-page.php?id=$1&title=$2 [NC,L]
+    RewriteRule ^instructors/ instructors.php [NC,L]
+    RewriteRule ^อบรมภายในองค์กร/ training.php [NC,L]
+    RewriteRule ^คอร์สการตลาดออนไลน์/ all-course.php [NC,L]
+    RewriteRule ^สถานที่อบรม/ utcc.php [NC,L]
+    RewriteRule ^utcc/ utcc.php [NC,L]
+    RewriteRule ^utcc utcc.php [NC,L]
+    RewriteRule ^utcc.html utcc.php [NC,L]
+    RewriteRule ^map map.php [NC,L]
+
+    RewriteRule ^course/ all-course.php [NC,L]
+    RewriteRule ^course$ all-course.php [NC,L]
+
+    RewriteRule ^เรียน-digital-marketing/ course.php?id=3&p=1 [NC,L]
+    RewriteRule ^สอนขายของออนไลน์/ course.php?id=4&p=1 [NC,L]
+    RewriteRule ^สอน-seo/ course.php?id=5&p=1 [NC,L]
+    RewriteRule ^สอน-google-ads-adwords/ course.php?id=6&p=1 [NC,L]
+    RewriteRule ^สอนลงโฆษณา-ยิงแอด-facebook-ads/ course.php?id=7&p=1 [NC,L]
+    RewriteRule ^สอน-line-official-account-line-oa/ course.php?id=8&p=1 [NC,L]
+    RewriteRule ^สอน-youtube/ course.php?id=9&p=1 [NC,L]
+    RewriteRule ^สอน-google-analytics/ course.php?id=10&p=1 [NC,L]
+    RewriteRule ^สอน-wordpress/ course.php?id=11&p=1 [NC,L]
+    RewriteRule ^สอน-tiktok/ course.php?id=12&p=1 [NC,L]
+    RewriteRule ^สอน-power-bi/ course.php?id=28&p=1 [NC,L]
+
+    RewriteRule ^advanced-digital-marketing/ course.php?id=14&p=0  [NC,L]
+    RewriteRule ^ขายให้ปัง-ให้รวย-ด้วย-lazada-shopee/ course.php?id=15&p=0  [NC,L]
+    RewriteRule ^เพิ่มยอดขายแบบมือโปรด้วย-seo/ course.php?id=16&p=0  [NC,L]
+    RewriteRule ^google-ads-secrets/ course.php?id=17&p=0  [NC,L]
+    RewriteRule ^facebook-ads-marketing/ course.php?id=18&p=0  [NC,L]
+    RewriteRule ^เพิ่มยอดขายด้วย-line-official-account-line-oa/ course.php?id=19&p=0  [NC,L]
+    RewriteRule ^สร้างช่อง-youtube-ให้ดัง-ทํารายได้ให้ปัง/ course.php?id=20&p=0  [NC,L]
+    RewriteRule ^google-analytics-for-digital-marketing-success/ course.php?id=21&p=0  [NC,L]
+    RewriteRule ^สร้างเว็บสวยด้วย-wordpress/ course.php?id=22&p=0  [NC,L]
+    RewriteRule ^tiktok-marketing-advertising/ course.php?id=23&p=0 [NC,L]
+    RewriteRule ^power-bi-for-business-analytics/ course.php?id=27&p=0 [NC,L]
+
+    RewriteRule ^privacy-policy/ privacy.php [NC,L]
+
+    RewriteRule ^about-us$ https://www.teamdigital.team/about-us/ [R=301,L] 
+    RewriteRule ^contact-us$ https://www.teamdigital.team/contact-us/ [R=301,L] 
+    RewriteRule ^blog$ https://www.teamdigital.team/blog/ [R=301,L] 
+    RewriteRule ^videos$ https://www.teamdigital.team/videos/ [R=301,L] 
+    RewriteRule ^promotion$ https://www.teamdigital.team/promotion/ [R=301,L] 
+    RewriteRule ^class-schedules$ https://www.teamdigital.team/class-schedules/ [R=301,L] 
+    RewriteRule ^testimonials$ https://www.teamdigital.team/testimonials/ [R=301,L] 
+    RewriteRule ^news$ https://www.teamdigital.team/news/ [R=301,L] 
+    RewriteRule ^instructors$ https://www.teamdigital.team/instructors/ [R=301,L] 
+    RewriteRule ^อบรมภายในองค์กร$ https://www.teamdigital.team/อบรมภายในองค์กร/ [R=301,L] 
+    RewriteRule ^คอร์สการตลาดออนไลน์$ https://www.teamdigital.team/คอร์สการตลาดออนไลน์/ [R=301,L] 
+ 
+    RewriteRule ^เรียน-digital-marketing$ https://www.teamdigital.team/เรียน-digital-marketing/ [R=301,L] 
+    RewriteRule ^สอนขายของออนไลน์$ https://www.teamdigital.team/สอนขายของออนไลน์/ [R=301,L] 
+    RewriteRule ^สอน-seo$ https://www.teamdigital.team/สอน-seo/ [R=301,L] 
+    RewriteRule ^สอน-google-ads-adwords$ https://www.teamdigital.team/สอน-google-ads-adwords/ [R=301,L] 
+    RewriteRule ^สอนลงโฆษณา-ยิงแอด-facebook-ads$ https://www.teamdigital.team/สอนลงโฆษณา-ยิงแอด-facebook-ads/ [R=301,L] 
+    RewriteRule ^สอน-line-official-account-line-oa$ https://www.teamdigital.team/สอน-line-official-account-line-oa/ [R=301,L] 
+    RewriteRule ^สอน-youtube$ https://www.teamdigital.team/สอน-youtube/ [R=301,L] 
+    RewriteRule ^สอน-google-analytics$ https://www.teamdigital.team/สอน-google-analytics/ [R=301,L] 
+    RewriteRule ^สอน-wordpress$ https://www.teamdigital.team/สอน-wordpress/ [R=301,L] 
+    RewriteRule ^สอน-tiktok$ https://www.teamdigital.team/สอน-tiktok/ [R=301,L] 
+
+    RewriteRule ^advanced-digital-marketing$ https://www.teamdigital.team/advanced-digital-marketing/ [R=301,L] 
+    RewriteRule ^ขายให้ปัง-ให้รวย-ด้วย-lazada-shopee$ https://www.teamdigital.team/ขายให้ปัง-ให้รวย-ด้วย-lazada-shopee/ [R=301,L] 
+    RewriteRule ^เพิ่มยอดขายแบบมือโปรด้วย-seo$ https://www.teamdigital.team/เพิ่มยอดขายแบบมือโปรด้วย-seo/ [R=301,L] 
+    RewriteRule ^google-ads-secrets$ https://www.teamdigital.team/google-ads-secrets/ [R=301,L] 
+    RewriteRule ^facebook-ads-marketing$ https://www.teamdigital.team/facebook-ads-marketing/ [R=301,L] 
+    RewriteRule ^เพิ่มยอดขายด้วย-line-official-account-line-oa$ https://www.teamdigital.team/เพิ่มยอดขายด้วย-line-official-account-line-oa/ [R=301,L] 
+    RewriteRule ^สร้างช่อง-youtube-ให้ดัง-ทํารายได้ให้ปัง$ https://www.teamdigital.team/สร้างช่อง-youtube-ให้ดัง-ทํารายได้ให้ปัง/ [R=301,L] 
+    RewriteRule ^google-analytics-for-digital-marketing-success$ https://www.teamdigital.team/google-analytics-for-digital-marketing-success/ [R=301,L] 
+    RewriteRule ^สร้างเว็บสวยด้วย-wordpress$ https://www.teamdigital.team/สร้างเว็บสวยด้วย-wordpress/ [R=301,L] 
+    RewriteRule ^tiktok-marketing-advertising$ https://www.teamdigital.team/tiktok-marketing-advertising/ [R=301,L] 
+
+    RewriteRule (digitalthailand-acquired/)$ digitalthailand.php [NC,L]
+    RewriteRule ^(digitalthailand-acquired)$ https://www.teamdigital.team/digitalthailand-acquired/ [NC,L]
+
+    RewriteRule (เรียนขายของออนไลน์/|เรียนขายของออนไลน์|สอนขายของออนไลน์)$ https://www.teamdigital.team/สอนขายของออนไลน์/ [NC,L]
+
+    RewriteRule (digitalthailand.in.th|digitalthailand.in.th/)$ https://www.teamdigital.team/digitalthailand-acquired/ [R=301,L]
+
+
+    RewriteRule (การตลาด).*(pdf) https://www.teamdigital.team/pdf/Digital-Marketing.pdf [R=301,L]
+    RewriteRule (Analytics).*(pdf) https://www.teamdigital.team/pdf/GA4.pdf [R=301,L]
+    RewriteRule (TikTok).*(pdf) https://www.teamdigital.team/pdf/TikTok.pdf [R=301,L]
+    RewriteRule (YouTube).*(pdf) https://www.teamdigital.team/pdf/YouTube.pdf [R=301,L]
+    RewriteRule (Lazada).*(pdf) https://www.teamdigital.team/pdf/Lazada-Shopee.pdf [R=301,L]
+    RewriteRule (WordPress).*(pdf) https://www.teamdigital.team/pdf/WordPress.pdf [R=301,L]
+    RewriteRule (Account).*(pdf) https://www.teamdigital.team/pdf/LINE-Official-Account.pdf [R=301,L]
+    RewriteRule (SEO).*(pdf) https://www.teamdigital.team/pdf/SEO.pdf [R=301,L]
+    RewriteRule (Facebook).*(pdf) https://www.teamdigital.team/pdf/Facebook-Ads.pdf [R=301,L]
+    RewriteRule (Secrets).*(pdf) https://www.teamdigital.team/pdf/Google-Ads.pdf [R=301,L]
+
+    RewriteRule ^เรียน-google-ads-adwords/$ https://www.teamdigital.team/สอน-google-ads-adwords/ [R=301,L]
+    RewriteRule ^เรียน-facebook-ads-marketing/$ https://www.teamdigital.team/สอนลงโฆษณา-ยิงแอด-facebook-ads/ [R=301,L]
+
+    RewriteRule ^aboutus$ https://www.teamdigital.team/about-us/ [R=301,L]
+
+    RewriteRule article$ https://www.teamdigital.team/blog/ [R=301,L]
+
+    RewriteRule /.+online-marketing$ https://www.teamdigital.team/เรียน-digital-marketing/ [R=301,L]
+    RewriteRule /.+digital-marketing$ https://www.teamdigital.team/เรียน-digital-marketing/ [R=301,L]    
+    RewriteRule /.+การตลาดออนไลน์$ https://www.teamdigital.team/เรียน-digital-marketing/ [R=301,L]    
+    RewriteRule /.+บัญชี.+ https://www.teamdigital.team/เรียน-digital-marketing/ [R=301,L]
+
+    ErrorDocument 404 /error404.php
+    
+</IfModule>
