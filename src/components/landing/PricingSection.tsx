@@ -31,7 +31,7 @@ const PricingSection = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             สมัคร<span className="gradient-text">อบรม</span>วันนี้
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">รุ่น 31 เปิดรับสมัครแล้ว จำนวนจำกัด</p>
+          <p className="text-muted-foreground max-w-2xl mx-auto">รุ่น 32 เปิดรับสมัครแล้ว จำนวนจำกัด</p>
         </div>
 
         {/* Pricing Card */}
@@ -52,7 +52,7 @@ const PricingSection = () => {
               <div className="space-y-3 mb-6 mt-4">
                 <div className="flex items-center gap-3 text-sm">
                   <Calendar className="w-5 h-5 text-primary shrink-0" />
-                  <span className="text-foreground font-medium">วันที่ 15-16 มกราคม 2569</span>
+                  <span className="text-foreground font-medium">วันที่ 12-13 มีนาคม 2569</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
                   <Clock className="w-5 h-5 text-primary shrink-0" />
