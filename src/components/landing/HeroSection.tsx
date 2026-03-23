@@ -33,7 +33,7 @@ const HeroSection = () => {
 
           {/* Key Info Cards */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto mb-8 opacity-0 animate-fade-up animate-delay-300">
-            <InfoCard icon={<Calendar className="w-5 h-5" />} label="รุ่น 32" value="12-13 มีนาคม 2569" />
+            <InfoCard icon={<Calendar className="w-5 h-5" />} label="รุ่น 33" value="14-15 พฤษภาคม 2569" />
             <InfoCard icon={<Clock className="w-5 h-5" />} label="เวลา" value="09:00-16:30" />
             <a href="https://maps.app.goo.gl/vVKHdN76rwAxhGH1A" target="_blank" rel="noopener noreferrer">
               <InfoCard icon={<MapPin className="w-5 h-5" />} label="สถานที่" value="Punthai Coffee" />

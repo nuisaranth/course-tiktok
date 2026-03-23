@@ -13,8 +13,8 @@ const features = [
 
 const pricingOptions = [
   { price: "6,900", label: "ต่อท่าน", persons: 1 },
-  { price: "12,000", label: "2 ท่าน", persons: 2 },
-  { price: "15,000", label: "3 ท่าน", persons: 3 },
+  { price: "12,900", label: "2 ท่าน", persons: 2 },
+  { price: "18,900", label: "3 ท่าน", persons: 3 },
 ];
 
 const PricingSection = () => {
@@ -31,7 +31,7 @@ const PricingSection = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             สมัคร<span className="gradient-text">อบรม</span>วันนี้
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">รุ่น 32 เปิดรับสมัครแล้ว จำนวนจำกัด</p>
+          <p className="text-muted-foreground max-w-2xl mx-auto">รุ่น 33 เปิดรับสมัครแล้ว จำนวนจำกัด</p>
         </div>
 
         {/* Pricing Card */}
@@ -44,7 +44,7 @@ const PricingSection = () => {
               {/* Badge */}
               <div className="absolute -top-px left-1/2 -translate-x-1/2">
                 <div className="px-4 py-1 bg-gradient-to-r from-tiktok-cyan to-tiktok-magenta rounded-b-lg">
-                  <div className="flex items-center gap-1 text-xs font-semibold text-background">รุ่น 31</div>
+                  <div className="flex items-center gap-1 text-xs font-semibold text-background">รุ่น 33</div>
                 </div>
               </div>
 
@@ -52,7 +52,7 @@ const PricingSection = () => {
               <div className="space-y-3 mb-6 mt-4">
                 <div className="flex items-center gap-3 text-sm">
                   <Calendar className="w-5 h-5 text-primary shrink-0" />
-                  <span className="text-foreground font-medium">วันที่ 12-13 มีนาคม 2569</span>
+                  <span className="text-foreground font-medium">วันที่ 14-15 พฤษภาคม 2569</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
                   <Clock className="w-5 h-5 text-primary shrink-0" />

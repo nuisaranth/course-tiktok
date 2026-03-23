@@ -27,7 +27,7 @@ const StickyCtaBar = () => {
             {/* Info */}
             <div className="hidden sm:block">
               <div className="flex items-baseline gap-2">
-                <span className="text-sm text-muted-foreground">รุ่น 31: 15-16 ม.ค. 69</span>
+                <span className="text-sm text-muted-foreground">รุ่น 33: 14-15 พฤษภาคม 2569</span>
                 <span className="text-xl font-bold gradient-text">฿6,900</span>
               </div>
               <p className="text-xs text-muted-foreground">รวม VAT | อาหาร | เอกสาร</p>
